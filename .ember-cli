@@ -5,5 +5,9 @@
 
     Setting `disableAnalytics` to true will prevent any data from being sent.
   */
-  "disableAnalytics": false
+  "disableAnalytics": false,
+  "proxy": "http://localhost:3000"
+  /**
+    Set this proxy to the address of your backend server
+  */
 }
