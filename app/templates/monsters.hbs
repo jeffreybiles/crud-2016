@@ -4,15 +4,18 @@
   <div class="col-sm-4 col-xs-6">
     <ul class="monsters-index-list">
       {{#each model as |monster|}}
-        <li class="monster list-unstyled">
+        {{#link-to 'monsters.monster.show' monster  tagName='li' class="monster list-unstyled"}}
           <span class="monster-image">
             <img src={{monster.imageUrl}} />
           </span>
           <span class="monster-info">
             lvl {{monster.level}} {{monster.name}}
           </span>
-        </li>
+        {{/link-to}}
       {{/each}}
     </ul>
+  </div>
+  <div class="col-sm-8 col-xs-6">
+    {{outlet}}
   </div>
 </div>
