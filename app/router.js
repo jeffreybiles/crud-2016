@@ -6,6 +6,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  // note that we're using 'route', not 'resource'... 'resource' is deprecated
+  this.route('monsters')
 });
 
 export default Router;
