@@ -17,3 +17,24 @@
   display: inline-block;
   text-align: center;
 }
+
+.monster-card {
+  border-image: linear-gradient(30deg, #efdb09 0%, #faef7e 15%, #f8e94d 30%, #fbf297 50%, #f8e94d 70%, #f6e426 85%, #f9ec66 100%) 1%;
+  border-width: 15px;
+  width: 300px;
+  min-height: 300px;
+  text-align: center;
+  background-image: radial-gradient(#dacada, #b494b4);
+  padding: 5px 20px;
+}
+.monster-card .name {
+  float: left;
+  font-size: 2em;
+  font-weight: bold;
+}
+.monster-card img {
+  max-width: 200px;
+  max-height: 200px;
+  /*border: 5px #f8e94d solid;*/
+  margin: 10px;
+}
