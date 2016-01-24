@@ -1,0 +1,19 @@
+.monsters-index-list .monster {
+  width: 100%;
+  background-color: #CCF;
+  margin: 3px;
+  padding: 3px;
+  vertical-align: middle;
+  border: 1px solid black;
+}
+
+.monsters-index-list .monster img {
+  max-width: 30px;
+  max-height: 40px;
+}
+
+.monsters-index-list .monster .monster-image {
+  width: 40px;
+  display: inline-block;
+  text-align: center;
+}
