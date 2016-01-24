@@ -7,7 +7,9 @@
     "ember-load-initializers": "0.1.7",
     "ember-qunit-notifications": "0.1.0",
     "jquery": "1.11.3",
-    "loader.js": "^3.5.0"
+    "loader.js": "^3.5.0",
+    "bootstrap": "~3.3.5",
+    "ember-addons.bs_for_ember": "~0.7.0"
   },
   "resolutions": {
     "ember": "2.2.0"
