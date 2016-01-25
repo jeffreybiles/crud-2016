@@ -1,0 +1,14 @@
+<div class="monster-card">
+  {{!-- one-way-input is an ember-addon --}}
+  {{!-- interaction of action and mut creates an action that is generated then added to the controller --}}
+  Name: {{one-way-input value=model.name update=(action (mut model.name))}}
+  <br>
+  Level: {{one-way-input value=model.level update=(action (mut model.level))}}
+  <br>
+  <img src={{model.imageUrl}} />
+  <br>
+  Image Source: {{one-way-input value=model.imageUrl update=(action (mut model.imageUrl))}}
+  <br>
+  Price (in dollars): {{one-way-input value=model.price update=(action (mut model.price))}}
+</div>
+<button {{action 'save'}}>Save</button>
