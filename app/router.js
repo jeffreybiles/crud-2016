@@ -11,6 +11,7 @@ Router.map(function() {
       this.route('show')
       this.route('edit')
     })
+    this.route('new')
   })
 });
 
