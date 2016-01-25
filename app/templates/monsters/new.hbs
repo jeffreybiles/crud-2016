@@ -1,12 +1,4 @@
-<div class="monster-card">
-  Name: {{one-way-input value=newModel.name update=(action (mut newModel.name))}}
-  <br>
-  Level: {{one-way-input value=newModel.level update=(action (mut newModel.level))}}
-  <br>
-  <img src={{newModel.imageUrl}} />
-  <br>
-  Image Source: {{one-way-input value=newModel.imageUrl update=(action (mut newModel.imageUrl))}}
-  <br>
-  Price (in dollars): {{one-way-input value=newModel.price update=(action (mut newModel.price))}}
-</div>
+{{monster-form model=newModel}}
+{{!-- Note the assignment of newModel to model --}}
+
 <button {{action 'save'}}>Save</button>
