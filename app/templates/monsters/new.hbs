@@ -1,3 +1,2 @@
-{{monster-form model=newModel}}
-
-<button {{action 'save'}}>Save</button>
+{{!-- closure action, sending in the 'save' action on the attrs --}}
+{{monster-form model=newModel save=(action "save")}}
