@@ -39,6 +39,7 @@
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
     "ember-one-way-controls": "0.4.0",
-    "ember-resolver": "^2.0.3"
+    "ember-resolver": "^2.0.3",
+    "liquid-fire": "0.23.0"
   }
 }

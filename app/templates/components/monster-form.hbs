@@ -3,7 +3,9 @@
   <br>
   Level: {{one-way-input value=model.level update=(action (mut model.level))}}
   <br>
-  <img src={{model.imageUrl}} />
+  {{#liquid-spacer growDuration=250}}
+    <img src={{model.imageUrl}} />
+  {{/liquid-spacer}}
   <br>
   Image Source: {{one-way-input value=model.imageUrl update=(action (mut model.imageUrl))}}
   <br>
