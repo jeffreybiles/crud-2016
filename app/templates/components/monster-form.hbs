@@ -3,7 +3,12 @@
   <br>
   Level: {{one-way-input value=model.level update=(action (mut model.level))}}
   <br>
-  <img src={{model.imageUrl}} />
+  {{#liquid-spacer growDuration=250}}
+  {{!-- liquid-spacer animates changes in size of the contained elements --}}
+  {{!-- there are some bugs when used here.  For example, on initial load it sometimes doesn't expand --}}
+  {{!-- and when changing the photo it sometimes doesn't shrikn --}}
+    <img src={{model.imageUrl}} />
+  {{/liquid-spacer}}
   <br>
   Image Source: {{one-way-input value=model.imageUrl update=(action (mut model.imageUrl))}}
   <br>
