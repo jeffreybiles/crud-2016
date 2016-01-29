@@ -9,5 +9,9 @@ export default function(){
     this.toRoute('monsters.monster.edit'),
     this.use('toUp'),
     this.reverse('toDown')
-  )
+  );
+  this.transition(
+    this.childOf('.monster-card'),
+    this.use('toRight')
+  );
 }
