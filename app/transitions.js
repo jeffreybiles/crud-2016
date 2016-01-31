@@ -16,4 +16,8 @@ export default function(){
     this.use('fade', {duration: 1000}),
     this.reverse('toDown', {duration: 1000})
   )
+  this.transition(
+    this.hasClass('liquid-monster'),
+    this.use('toRight', {duration: 3000})
+  )
 }
