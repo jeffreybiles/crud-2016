@@ -5,5 +5,6 @@ export default Ember.Component.extend({
     save(){
       this.attrs.save()
     }
-  }
+  },
+  isHighLevel: Ember.computed.gte('model.level', 10)
 });
