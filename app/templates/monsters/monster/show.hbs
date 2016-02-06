@@ -1,10 +1,10 @@
 {{#liquid-bind model class="liquid-monster" as |newMonster|}}
   <div class="monster-card">
     <span class="name">{{newMonster.name}}</span>
-    <span class="pull-right">Level: {{newMonster.level}}</span>
+    <span class="pull-right level">Level: {{newMonster.level}}</span>
 
 
-    <img src={{newMonster.imageUrl}} />
+    <img src={{newMonster.imageUrl}} class="monster-image" />
     <br>
     ${{newMonster.price}}
   </div>

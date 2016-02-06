@@ -18,6 +18,17 @@ export default function(){
   )
   this.transition(
     this.hasClass('liquid-monster'),
-    this.use('toRight', {duration: 3000})
+    this.use('explode', {
+      pick: '.level',
+      use: 'toUp'
+    },{
+      pickNew: '.name',
+      use: 'toRight'
+    },{
+      pickOld: '.name',
+      use: 'toLeft'
+    }, {
+      use: ['fade', {duration: 500}]
+    })
   )
 }
