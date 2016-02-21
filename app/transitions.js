@@ -10,4 +10,25 @@ export default function(){
     this.use('toUp'),
     this.reverse('toDown')
   )
+  this.transition(
+    this.hasClass('high-level'),
+    this.toValue(false),
+    this.use('fade', {duration: 1000}),
+    this.reverse('toDown', {duration: 1000})
+  )
+  this.transition(
+    this.hasClass('liquid-monster'),
+    this.use('explode', {
+      pick: '.level',
+      use: 'toUp'
+    },{
+      pickNew: '.name',
+      use: 'toRight'
+    },{
+      pickOld: '.name',
+      use: 'toLeft'
+    }, {
+      use: ['fade', {duration: 500}]
+    })
+  )
 }

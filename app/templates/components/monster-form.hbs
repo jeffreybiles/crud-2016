@@ -2,6 +2,11 @@
   Name: {{one-way-input value=model.name update=(action (mut model.name))}}
   <br>
   Level: {{one-way-input value=model.level update=(action (mut model.level))}}
+  {{#liquid-if isHighLevel class="high-level"}}
+    Wow!  Such a high level!
+  {{else}}
+    Work harder, level up.
+  {{/liquid-if}}
   <br>
   {{#liquid-spacer growDuration=250}}
     <img src={{model.imageUrl}} />

@@ -1,9 +1,12 @@
-<div class="monster-card">
-  <span class="name">{{model.name}}</span>
-  <span class="pull-right">Level: {{model.level}}</span>
+{{#liquid-bind model class="liquid-monster" as |newMonster|}}
+  <div class="monster-card">
+    <span class="name">{{newMonster.name}}</span>
+    <span class="pull-right level">Level: {{newMonster.level}}</span>
 
-  <img src={{model.imageUrl}} />
-  <br>
-  ${{model.price}}
-</div>
+
+    <img src={{newMonster.imageUrl}} class="monster-image" />
+    <br>
+    ${{newMonster.price}}
+  </div>
+{{/liquid-bind}}
 <button {{action 'destroyCard'}}>Destroy Monster</button>{{#link-to 'monsters.monster.edit' model tagName="button"}}Edit Monster{{/link-to}}
