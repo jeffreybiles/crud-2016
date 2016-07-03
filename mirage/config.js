@@ -18,7 +18,7 @@ export default function() {
   this.put('/monsters/:id');
   this.del('/monsters/:id');
 
-  his.passthrough('/_percy/**');
+  this.passthrough('/_percy/**');
   /*
     Shorthand cheatsheet:
 
