@@ -1,6 +1,8 @@
 {{#liquid-bind model class="liquid-monster" as |newMonster|}}
   <div class="monster-card">
+    {{#blink-tag}}
     <span class="name">{{newMonster.name}}</span>
+    {{/blink-tag}}
     <span class="pull-right level">Level: {{newMonster.level}}</span>
 
 
