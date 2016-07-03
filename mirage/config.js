@@ -17,6 +17,8 @@ export default function() {
   this.get('/monsters/:id');
   this.put('/monsters/:id');
   this.del('/monsters/:id');
+
+  his.passthrough('/_percy/**');
   /*
     Shorthand cheatsheet:
 
