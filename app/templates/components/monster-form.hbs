@@ -1,13 +1,13 @@
 <div class="monster-card">
-  Name: {{one-way-input value=model.name update=(action (mut model.name))}}
-  <br>
-  Level: {{one-way-input value=model.level update=(action (mut model.level))}}
-  {{#liquid-if isHighLevel class="high-level"}}
-    Wow!  Such a high level!
-  {{else}}
-    Work harder, level up.
-  {{/liquid-if}}
-  <br>
+  <div class="edit-name">Name: {{one-way-input value=model.name update=(action (mut model.name))}}</div>
+  <div class="edit-level">Level: {{one-way-input value=model.level update=(action (mut model.level))}}</div>
+  <div class="edit-level-message">
+    {{#liquid-if isHighLevel class="high-level"}}
+      Wow!  Such a high level!
+    {{else}}
+      Work harder, level up.
+    {{/liquid-if}}
+  </div>
   {{#liquid-spacer growDuration=250}}
     <img src={{model.imageUrl}} />
   {{/liquid-spacer}}
