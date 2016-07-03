@@ -10,7 +10,8 @@ test('visiting /monsters', function(assert) {
   andThen(function() {
     assert.equal(currentURL(), '/monsters');
     assert.equal($('.monster').length, 5);
-
-    percySnapshot('monsters-index');
   });
+  
+  percySnapshot('monsters-index');
+
 });
