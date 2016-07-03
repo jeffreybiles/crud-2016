@@ -1,5 +1,7 @@
 export default function() {
 
+  this.passthrough('/_percy/**');
+  
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
@@ -18,7 +20,6 @@ export default function() {
   this.put('/monsters/:id');
   this.del('/monsters/:id');
 
-  this.passthrough('/_percy/**');
   /*
     Shorthand cheatsheet:
 
