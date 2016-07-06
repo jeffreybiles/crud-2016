@@ -4,7 +4,7 @@
   <div class="col-sm-4 col-xs-6">
     {{#link-to 'monsters.new' tagName="button"}}New Monster{{/link-to}}
     {{#link-to 'monsters' tagName="button"}}Monster Index{{/link-to}}
-    <ul class="monsters-index-list">
+    <div class="monsters-index-list">
       {{#each model as |monster|}}
         {{#link-to 'monsters.monster.show' monster  tagName='li' class="monster list-unstyled"}}
           <span class="monster-image">
@@ -15,7 +15,7 @@
           </span>
         {{/link-to}}
       {{/each}}
-    </ul>
+    </div>
   </div>
   <div class="col-sm-8 col-xs-6">
     {{liquid-outlet}}
