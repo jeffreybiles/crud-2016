@@ -11,7 +11,8 @@ test('visiting /monsters', function(assert) {
     assert.equal(currentURL(), '/monsters');
     assert.equal($('.monster').length, 5);
   });
-  
-  percySnapshot('monsters-index');
 
+  percySnapshot('monsters-index');
+  click('.monsters-index-list .monster:first-child');
+  percySnapshot('monsters-show');
 });
