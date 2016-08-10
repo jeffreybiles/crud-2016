@@ -17,5 +17,14 @@
   Price (in dollars): {{one-way-input value=changeset.price update=(action (mut changeset.price))}}
 </div>
 
+<h4>Changes</h4>
+<ul>
+  {{log changeset}}
+  {{#each changeset.changes as |change|}}
+    <li>{{change.key}}: {{get changeset._content change.key}} -> {{change.value}}</li>
+  {{else}}
+    No changes yet
+  {{/each}}
+</ul>
 <button {{action 'save'}}>Save</button>
 <button {{action 'rollback'}}>Cancel</button>
