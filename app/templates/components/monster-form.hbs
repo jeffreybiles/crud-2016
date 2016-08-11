@@ -8,9 +8,7 @@
       Work harder, level up.
     {{/liquid-if}}
   </div>
-  {{#liquid-spacer growDuration=250}}
-    <img src={{changeset.imageUrl}} />
-  {{/liquid-spacer}}
+  <img src={{changeset.imageUrl}} />
   <br>
   Image Source: {{one-way-input value=changeset.imageUrl update=(action (mut changeset.imageUrl))}}
   <br>
