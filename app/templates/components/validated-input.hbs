@@ -1,0 +1,13 @@
+<div class="edit-{{propertyName}}">
+  {{label}}
+  {{one-way-input value=(get changeset propertyName)
+                  update=(action (mut (get changeset propertyName)))
+                  onblur=(action 'validateProperty' changeset property)}}
+
+  {{#if (get changeset.error propertyName)}}
+    {{#each (get (get changeset.error propertyName) 'validation') as |error|}}
+      <br>
+      {{error}}
+    {{/each}}
+  {{/if}}
+</div>

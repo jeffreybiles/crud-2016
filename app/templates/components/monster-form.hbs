@@ -1,6 +1,7 @@
 <div class="monster-card">
-  <div class="edit-name">Name: {{one-way-input value=changeset.name update=(action (mut changeset.name))}}</div>
-  <div class="edit-level">Level: {{one-way-input value=changeset.level update=(action (mut changeset.level))}}</div>
+  {{validated-input label="Name: " propertyName="name" changeset=changeset}}
+  {{validated-input label="Level: " propertyName="level" changeset=changeset}}
+
   <div class="edit-level-message">
     {{#liquid-if isHighLevel class="high-level"}}
       Wow!  Such a high level!
@@ -9,17 +10,10 @@
     {{/liquid-if}}
   </div>
   <img src={{changeset.imageUrl}} />
-  <br>
-  Image Source: {{one-way-input value=changeset.imageUrl update=(action (mut changeset.imageUrl))}}
-  <br>
-  Price (in dollars): {{one-way-input value=changeset.price update=(action (mut changeset.price))}}
+
+  {{validated-input label="Image Source: " propertyName="imageUrl" changeset=changeset}}
+  {{validated-input label="Price (in dollars): " propertyName="price" changeset=changeset}}
 </div>
-<ul>
-  {{#each changeset.errors as |errorSet|}}
-    {{#each errorSet.validation as |error|}}
-      <li>{{error}}</li>
-    {{/each}}
-  {{/each}}
-</ul>
+
 <button {{action 'save'}}>Save</button>
 <button {{action 'rollback'}}>Cancel</button>
