@@ -25,6 +25,7 @@
     "ember-ajax": "^2.0.1",
     "ember-bootstrap": "0.6.0",
     "ember-changeset": "0.13.3",
+    "ember-changeset-validations": "0.9.3",
     "ember-cli": "2.6.2",
     "ember-cli-app-version": "^1.0.0",
     "ember-cli-babel": "^5.1.6",
