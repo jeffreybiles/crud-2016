@@ -1,5 +1,13 @@
 export default function() {
+  this.namespace = '/v2'
 
+  this.get('/monsters', ()=>{
+    return {
+      monsters: [
+        {id: 2}
+      ]
+    }
+  })
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
