@@ -9,4 +9,5 @@
     ${{newMonster.price}}
   </div>
 {{/liquid-bind}}
-<button {{action 'destroyCard'}}>Destroy Monster</button>{{#link-to 'monsters.monster.edit' model tagName="button"}}Edit Monster{{/link-to}}
+<button class="destroy-button" {{action 'destroyCard'}}>Destroy Monster</button>
+{{#link-to 'monsters.monster.edit' model tagName="button" class="edit-button"}}Edit Monster{{/link-to}}

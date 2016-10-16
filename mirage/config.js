@@ -1,9 +1,7 @@
 export default function() {
   this.namespace = '/v2';
 
-  this.get('/monsters');
-  this.get('/monsters/:id');
-  // this.get("/monsters/:id", )
+  this.resource('/monsters');
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
