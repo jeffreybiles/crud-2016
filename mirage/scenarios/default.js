@@ -1,6 +1,6 @@
 export default function(server) {
 
-  server.createList('monster', 10)
+  server.createList('monster', 10);
   /*
     Seed your development database using your factories.
     This data will not be loaded in your tests.

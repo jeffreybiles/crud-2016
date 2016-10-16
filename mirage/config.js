@@ -1,5 +1,5 @@
 export default function() {
-  this.namespace = '/v2'
+  this.namespace = '/v2';
 
   this.get('/monsters');
   this.get('/monsters/:id');
