@@ -1,4 +1,4 @@
-import { ActiveModelSerializer } from 'ember-cli-mirage';
+import { RestSerializer } from 'ember-cli-mirage';
 
-export default ActiveModelSerializer.extend({
+export default RestSerializer.extend({
 });

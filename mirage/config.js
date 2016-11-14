@@ -1,7 +1,5 @@
 export default function() {
-  this.namespace = '/v2';
-
-  this.resource('/monsters');
+  this.resource('monsters');
   // These comments are here to help you get started. Feel free to delete them.
 
   /*

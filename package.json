@@ -24,6 +24,7 @@
     "broccoli-asset-rev": "^2.4.2",
     "ember-ajax": "^2.0.1",
     "ember-bootstrap": "0.6.0",
+    "ember-browserify": "1.1.13",
     "ember-cli": "2.6.2",
     "ember-cli-app-version": "^1.0.0",
     "ember-cli-babel": "^5.1.6",
@@ -41,8 +42,11 @@
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
     "ember-one-way-controls": "0.8.3",
+    "ember-redux": "1.8.0",
     "ember-resolver": "^2.0.3",
     "liquid-fire": "0.23.0",
-    "loader.js": "^4.0.1"
+    "loader.js": "^4.0.1",
+    "redux": "3.6.0",
+    "redux-thunk": "2.1.0"
   }
 }
