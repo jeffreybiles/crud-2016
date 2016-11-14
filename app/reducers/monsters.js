@@ -10,6 +10,12 @@ export default ((state, action) => {
       all: uniq(state.all, action.response.monsters)
     });
   }
+  if (action.type === 'DESERIALIZE_MONSTER') {
+    return Object.assign({}, state, {
+      all: uniq(state.all, action.response.monster),
+      selectedMonster: action.response.monster.id
+    });
+  }
   if(action.type === 'EDIT_MONSTER') {
 
   }

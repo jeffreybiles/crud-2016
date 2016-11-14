@@ -1,7 +1,8 @@
-import Ember from 'ember';
+import route from 'ember-redux/route';
+import ajax from 'crud-2016/utilities/ajax-helper';
 
-export default Ember.Route.extend({
-  model(params){
-    return this.store.findRecord('monster', params.monster_id);
-  }
-});
+var model = (dispatch, options) => {
+  return ajax(`/monsters/${options.monster_id}`, 'GET').then(response => dispatch({type: 'DESERIALIZE_MONSTER', response: response}));
+}
+
+export default route({model})();
