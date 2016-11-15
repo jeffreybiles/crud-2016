@@ -17,7 +17,9 @@ export default ((state, action) => {
     });
   }
   if(action.type === 'EDIT_MONSTER') {
-
+    return Object.assign({}, state, {
+      all: uniq(state.all, action.data)
+    })
   }
   return state || initialState
 })
