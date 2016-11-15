@@ -11,7 +11,8 @@ export default Ember.Component.extend({
     this._super(args);
     var properties = ['id', 'name', 'level', 'imageUrl', 'price']
     var monster = args[0].newAttrs.monster.value;
-    this.set('buffer', monster)
+    let buffer = Object.assign({}, monster)
+    this.set('buffer', buffer)
   },
   isHighLevel: Ember.computed.gte('buffer.level', 10),
   layout: hbs`
