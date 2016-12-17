@@ -7,6 +7,8 @@ test('visiting /monsters', function(assert) {
   server.createList('monster', 5);
   visit('/monsters');
 
+  percySnapshot('monsters-index');
+
   andThen(function() {
     assert.equal(currentURL(), '/monsters');
     assert.equal($('.monster').length, 5);
